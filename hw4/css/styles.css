@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Tahoma';
+    src: local("Tahoma"), local("TahomaRegular"),
+    url('../fonts/Tahoma-Regular/Tahoma-Regular.eot');
+    url('../fonts/Tahoma-Regular/Tahoma-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Tahoma-Regular/Tahoma-Regular.woff') format('woff'),
+    url('../fonts/Tahoma-Regular/Tahoma-Regular.ttf') format('truetype'),
+    url('../fonts/Tahoma-Regular/Tahoma-Regular.svg#Tahoma-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Tahoma, sans-serif;
+    background-image: url("../images/background.png");
+    position: relative;
+}
+
+.main{
+    width: 80%;
+    border-bottom: 2px solid #000;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, .4);
+    margin: 0 auto;
+    background-color: #fff;
+}
+/* Верхний блок */
+
+.header {
+    position: relative;
+    z-index: 1;
+}
+.top {
+    background-image: url(../images/new.png);/*пальма и надпись как фон*/
+    background-repeat: no-repeat;/*запрещает повторение фона*/
+    background-position-x: 30px;/*сдвиг по горизонтали*/
+    background-position-y: 40px;/*сдвиг по вертикали*/
+    height: 213px;
+    position: relative;/*нужен для позиционирования контактов и флагов (абсолют)*/
+}
+.top .flags a {
+    font-size: 12px;
+    color: #128aa7;
+}
+.top .flags a img {
+    display: block;/*выносит названия стран под флаг*/
+    margin: 0 auto;/*центрирует внутри блока*/
+}
+.flags {
+    position: absolute;/*для переноса в право*/
+    right: 30px;/*устанавливает положение на 30рх от правого края родителя*/
+    bottom: 15px;/*устанавливает положение снизу*/
+}
+.flags ul li {
+    display: inline-block;/*выстраивает флаги по горизонтали*/
+    margin-left: 20px;/*расстояние между флагами*/
+    text-align: center;/*центрирует текст в блоке с флагом относительно блока*/
+}
+.flags ul li:last-child {
+    margin-left: 5px;/*последний блок списка с меньшим отступом*/
+}
+
+.flags ul li:nth-child(5) {
+    margin-left: 10px;  /*пятый блок списка с меньшим отступом*/
+}
+
+.contacts {
+    color: #1289a7;
+    font-size: 16px;
+    position: absolute;/*см. флаги*/
+    right: 30px;/*см. флаги*/
+}
+
+.we {
+    font-weight: bold;
+    line-height: 2;
+}
+/* Баннер с пляжем */
+.beach {
+    background-image: url(../images/beach.png);
+    height: 240px;
+    background-size: cover;/*растянуть фон по всему блоку*/
+    border-top: 1px solid #128aa7;
+    border-bottom: 1px solid #128aa7;
+}
+/* Верхнее меню */
+.menu-wrap {
+    border-top: 1px solid #fff; /*белая полоса*/
+    min-height: 30px;
+}
+.menu-wrap ul {
+    background-color: #343434;
+    font-size: 0;
+}
+.menu-wrap ul li a {
+    color: #fff;
+    text-decoration: none;/*убираем подчеркивание ссылки*/
+    padding: 10px 25px 10px 25px;/**/
+}
+.menu-wrap .menu {
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.75);
+    border-bottom: 1px solid #000;
+    padding: 0 65px;
+}
+.menu-wrap .menu li {
+    display: inline-block;
+    position: relative;
+    padding: 10px 17px;
+    font-size: 14px;
+}
+
+.menu-wrap .sub-menu {
+    display: none;
+    position: absolute;
+    left: 37px;
+    top: 35px;
+    padding: 0 0 5px 0;
+    box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.75);
+}
+.menu li:hover .sub-menu {
+    display: block;
+}
+.menu-wrap .sub-menu li {
+    display: block;
+    padding: 5px;
+}
+
+.menu-wrap .sub-menu li a {
+    padding: 0 25px 0 0;
+}
+
+.triangle {
+    font-size: 8px;
+    padding-left: 6px;
+}
+
+.content {
+    min-height: 300px;
+}
+.left-block {
+    float: left;
+    background-color: #edeef0;
+    min-width: 15%;
+    min-height: 375px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.right-block {
+    float: right;
+    background-color: #edeef0;
+    min-width: 15%;
+    min-height: 375px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.caption {
+    color: #414b43; /* text color */
+    font-size: 18px;
+    text-align: center;
+    line-height: 2;
+}
+
+.lorem-ipsum {
+    color: #414b43; /* text color */
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer {
+    width: 100%;
+    background-color: #007fa8;
+    color: #fff;
+    text-align: center;
+    padding: 9px;
+    font-size: 12px;
+}
+
