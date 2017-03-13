@@ -1,0 +1,100 @@
+/*сброс стилей*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*Моя работа*/
+
+
+
+body{
+    font-family: "Times New Roman", sans-serif;
+    font-size: 16px;
+    background-color: #EEEEEE;
+    padding: 5px;
+}
+.main{
+    width: 513px;
+    height: 750px;
+    box-shadow: 1px 1px 1px 1px #b8b8b8;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 70px;
+    background-color: #FFFFFF;
+}
+.block{
+    border-bottom: solid 1px #b8b8b8;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.name{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.image{
+    text-align: center;
+}
+.student{
+    padding-left: 15px;
+}
+.want{
+    padding-left: 15px;
+    padding-bottom: 35px;
+}
+.list{
+    margin-left: 65px;
+}
+ul > li {
+    list-style: outside;
+    padding: 5px;
+}
+.phone{
+    padding-bottom: 40px ;
+}
+.text{
+    padding-bottom: 15px;
+}
+
