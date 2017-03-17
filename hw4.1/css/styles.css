@@ -1,0 +1,274 @@
+@font-face {
+    font-family: 'Tahoma';
+    src: local("Tahoma"), local("TahomaRegular"),
+    url('../fonts/Tahoma-Regular/Tahoma-Regular.eot');
+url('../fonts/Tahoma-Regular/Tahoma-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Tahoma-Regular/Tahoma-Regular.woff') format('woff'),
+url('../fonts/Tahoma-Regular/Tahoma-Regular.ttf') format('truetype'),
+url('../fonts/Tahoma-Regular/Tahoma-Regular.svg#Tahoma-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+}
+.clearfix,
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+body,
+html {
+    height: 100%;
+}
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    position: relative;
+    background: #22d1e3;
+    background: linear-gradient(to bottom, #22d1e3 0%, #ebfefe 23%, #a3e2ff 22%, #0c739f 100%);
+}
+header a {
+    color: #1289a7;
+}
+
+header  {
+    height: 181px;
+}
+/*главный контейнер*/
+.container {
+    width: 1000px;
+    background-color: #fff;
+    margin: 0 auto;
+
+    position: relative;
+}
+.logo {
+    float: left;
+    margin: 20px 0 -2px 30px;
+}
+.contacts, .flags {
+    float: right;
+}
+.contacts {
+    margin: 0 30px 35px 0;
+}
+.we {
+    font-weight: bold;
+    line-height: 2;
+}
+.flags {
+    clear: right;
+    margin-right: 30px;
+}
+.flags ul {
+    font-size: 0;
+}
+.flags ul li {
+    display: inline-block;
+    font-size: 10px;
+}
+.flags ul li a {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+.flags ul li a:hover {
+    opacity: .70;
+    text-decoration: none;
+}
+/*банер с пляжем*/
+.bg-fon {
+    background-image: url(../images/beach.png);
+    background-size: cover;/*растянуть фон по всему блоку*/
+    background-repeat:no-repeat;
+    height: 237px;
+    border: 1px solid #128aa7;
+}
+.nav {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #fff; /*белая полоса*/
+    min-height: 30px;
+    background-color: #343434;
+    padding: 0 25px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.75);
+    position: relative;
+}
+
+.nav ul {
+    font-size: 0;
+    background-color: #343434;
+}
+
+.nav ul li a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none; /*убираем подчеркивание ссылки*/
+    width: 100%;
+}
+
+.nav .menu .menu-list {
+    display: inline-block;
+    position: relative;
+    padding: 7px 0;
+}
+.nav .menu .menu-list a {
+    padding: 0 34px;
+}
+
+.menu li a:hover {
+    color: #fff;
+    text-shadow: 0 0 0.1em #41c6d3;
+}
+.triangle::after {
+    content: " ";
+    position: absolute;
+    border: 4px solid;
+    border-color: #fff transparent transparent transparent;
+    top: 14px;
+    right: 20px;
+}
+    /*выпадающее*/
+.nav .menu-drop {
+    display: none;
+    position: absolute;
+    left: 24px;
+    top: 29px;
+}
+
+.menu li:hover .menu-drop {
+    display: block;
+    box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.75);
+}
+.nav .menu-list .menu-drop  li a {
+    display: block;
+    padding: 0 20px 10px 10px;
+}
+
+.triangle::after {
+    content: " ";
+    position: absolute;
+    border: 4px solid;
+    border-color: #fff transparent transparent transparent;
+    top: 14px;
+    right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*горизонтальное меню
+.nav {
+    min-height: 30px;
+    border-top: 1px solid #fff; /*белая полоса*
+    background-color: #343434;
+    border-bottom: 1px solid #000;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.75);
+    position: relative;
+    z-index: 300;
+    padding: 0 20px;
+}
+.nav ul {
+    font-size: 0;
+}
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    padding: 7px 35px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.menu li a:hover {
+    color: #fff;
+    text-shadow: 0 0 0.1em #41c6d3;
+}*/
+/*выпадающее меню
+.menu {
+    position: relative;
+}
+.menu-list {
+    position: relative;
+}
+.menu-list.menu-drop {
+    box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.75);
+}
+.menu-drop {
+    position: absolute;
+    width: 100%;
+    left: 14px;
+    top: 29px;
+    display: none;
+}
+.menu-drop li {
+    padding: 0 10px;
+}
+.menu-drop li a {
+    padding: 0 20px 10px 10px;
+    background-color: #343434;
+}
+
+.menu li:hover .menu-drop {
+    display: block;
+}
+/*.menu-list::after {
+    content: " ";
+    position: absolute;
+    border: 4px solid ;
+    border-color: #fff transparent transparent transparent;
+    top: 14px;
+    right: 20px;
+}*/
+.content {
+    height: 310px;
+    overflow: hidden;
+}
+.left-block {
+    float: left;
+    background-color: #edeef0;
+    min-width: 15%;
+    min-height: 375px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.right-block {
+    float: right;
+    background-color: #edeef0;
+    min-width: 15%;
+    min-height: 375px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.caption {
+    color: #414b43; /* text color */
+    font-size: 18px;
+    text-align: center;
+    line-height: 2;
+}
+.lorem-ipsum {
+    color: #414b43; /* text color */
+    font-size: 14px;
+    line-height: 1.5;
+}
+.footer {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 9px;
+    font-size: 12px;
+}
