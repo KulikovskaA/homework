@@ -71,6 +71,16 @@ body{
 .menu a:hover {
     text-shadow: 0 0 0.1em #fff;
 }
+.top-menu .menu ul:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    background: #56a2dc;
+    right: 370px;
+    height: 30px;
+    top: 3px;
+}
 .menu span a:active {
     background: #50afdc;
     background: -moz-linear-gradient(top, #50afdc 0%, #2e7ac4 100%);
@@ -157,7 +167,7 @@ body{
     background: linear-gradient(to right, #203b70 50%, #4c68a9 50%);
     height: 36px;
     right: 0;
-    top: -8px;
+    top: -9px;
 }
 
 .facebook:hover {
