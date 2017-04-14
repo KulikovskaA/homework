@@ -1,0 +1,24 @@
+.information {
+  padding: 20px 0;
+  background-color: #ececec;
+  border-top: 1px solid #d8d8d8;
+  max-height: 570px;
+  .info-b {
+    padding: 10px 40px 10px 0;
+    max-height: 180px;
+    overflow: hidden;
+  }
+  .info-title {
+    font-size: 1.875rem;
+    font-family: $league-gothic-r;
+    color: $gray-d;
+    text-shadow: 0 1px 0 #ffffff;
+  }
+  .info-txt {
+    font-size: $fs-base;
+    font-family: $open-sans-l;
+    color: #787878;
+    text-shadow: 0 1px 0 #ffffff;
+    line-height: $lh-md;
+  }
+}

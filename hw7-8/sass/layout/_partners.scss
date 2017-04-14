@@ -1,0 +1,16 @@
+.block-partners {
+  background-color: $egg;
+  max-height: 110px;
+  overflow: hidden;
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
+  .partners {
+    padding: 20px 0;
+    ul {
+      li {
+        display: inline-block;
+        padding: 10px 21px;
+      }
+    }
+  }
+}

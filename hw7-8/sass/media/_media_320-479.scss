@@ -1,0 +1,19 @@
+@media (max-width: 479px) {
+  .slider {
+    background-color: transparent;
+  }
+  .block-partners {
+    max-height: 300px;
+    .partners {
+      ul {
+        max-width: 250px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .footer {
+    .menu-footer {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+@media (max-width: 991px) {
+  [class*="col-"] {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .main-menu {
+    float: left;
+  }
+  .info {
+    max-height: 115px;
+    overflow: hidden;
+  }
+  .title {
+    max-height: 30px;
+    overflow: hidden;
+  }
+  .slider{
+    .slider-content {
+      .lorem-ipsum {
+        font-size: $fs-large;
+      }
+      .title {
+        font-size: $fs-title-large;
+        max-height: 25px;
+        overflow: hidden;
+      }
+      .info {
+        font-size: $fs-base;
+        max-height: 100px;
+        overflow: hidden;
+      }
+    }
+  }
+  .about {
+    .about-us {
+      h3 {
+        font-size: $fs-title-large;
+      }
+    }
+  }
+  .white-bg {
+    .cloud {
+      max-width: 315px;
+      margin: 50px auto 0;
+    }
+    .text-left {
+      max-height: 140px;
+      overflow: hidden;
+    }
+    .updates {
+      margin: 50px auto 0;
+      .updates1 {
+        .caption-updates {
+          max-width: 250px;
+          max-height: 20px;
+          overflow: hidden;
+        }
+        .text-updates {
+          max-width: 250px;
+          max-height: 20px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+  .white-bg {
+    .cloud {
+      max-width: 450px;
+      margin: 50px auto 0;
+    }
+    .updates {
+      margin: 20px auto 0;
+      .updates1 {
+        .caption-updates {
+          min-width: 600px;
+          max-height: 20px;
+        }
+        .text-updates {
+          max-width: 600px;
+          max-height: 20px;
+        }
+      }
+    }
+  }
+  .block-partners {
+    .partners {
+      ul {
+        li {
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+  .information {
+    .info-title {
+      font-size: $fs-title-large;
+    }
+    .info-b {
+      max-height: 175px;
+      overflow: hidden;
+    }
+  }
+  .footer {
+    .menu-footer {
+      ul {
+        li {
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}

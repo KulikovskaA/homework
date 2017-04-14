@@ -1,0 +1,15 @@
+.top-header-block {
+  .logo{
+    max-width: 160px;
+    width: 100%;
+    font-family: $league-gothic-r;
+    font-size: $fs-large;
+    color: $white;
+    text-transform: uppercase;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    .er{
+      text-shadow: none;
+      color: $purple;
+    }
+  }
+}

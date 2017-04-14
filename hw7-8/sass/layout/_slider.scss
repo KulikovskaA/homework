@@ -1,0 +1,36 @@
+.slider {
+  position: relative;
+  background: $bg-black;
+  margin-top: 164px;
+  max-height: 400px;
+  background-color: rgba($bg-black, .2);
+  .slider-content {
+    max-width: 430px;
+    width: 100%;
+    padding: 55px 0;
+    .lorem-ipsum {
+      color: $white; /* text color */
+      font-family: $league-gothic-r;
+      font-size: $fs-extra-large;
+      text-shadow: 0 2px 2px rgba(0,0,0,.3);
+    }
+    .title {
+      color: $pink;
+      font-family: $league-gothic-r;
+      font-size: $fs-title-extra-large;
+      text-shadow: 0 2px 2px rgba(0,0,0,.3);
+    }
+    .info {
+      font-family: $open-sans-l;
+      color:  $white;
+      font-size: $fs-title;
+      line-height: $lh-md;
+      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    }
+  }
+  .slider-image{
+    max-width: 280px;
+    width: 100%;
+    margin: -20px auto 0;
+  }
+}

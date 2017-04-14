@@ -1,0 +1,99 @@
+.white-bg {
+  background-color: $egg;
+  min-height: 485px;
+  border-bottom: 1px solid #e6e6e6;
+  .cloud {
+    margin-top: 50px;
+    background-color: $white;
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    padding: 20px 30px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    @include after-absolute {
+      @include icon(triangle);
+      right: 100px;
+      bottom: -20px;
+    }
+    .start {
+      font-family: $league-gothic-r;
+      color: $gray-d;
+      font-size: 1.875rem;
+      line-height: $lh-md;
+      @include before-absolute {
+        @include icon(the-guy);
+        left: -25px;
+        top: 15px;
+      }
+      .starts-here {
+        font-family: $league-gothic-r;
+        color: $pink;
+        font-size: 1.875rem;
+        line-height: $lh-md;
+      }
+    }
+    .text-left {
+      font-family: $open-sans-l;
+      color: $gray-d;
+      font-size: $fs-base;
+      line-height: $lh-md;
+      text-shadow: 0 1px 0 #ffffff;
+    }
+  }
+  .updates {
+    max-width: 450px;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 50px;
+    .caption {
+      font-size: 1.875rem;
+      font-family: $league-gothic-r;
+    }
+    .updates1 {
+      padding-left: 60px;
+      margin: 15px 0;
+      .caption-updates {
+        font-family: $open-sans-l;
+        font-size: $fs-base;
+        font-weight: bold;
+        color: $black;
+      }
+      .text-updates {
+        font-family: $open-sans-l;
+        font-size: 0.9375rem;
+        line-height: $lh-md;
+      }
+    }
+    a {
+      text-decoration: none;
+      font-family: $league-gothic-r;
+      font-size: $fs-title;
+      color: $gray-d;
+      float: right;
+    }
+  }
+  .circle1 {
+    position: relative;
+    @include before-absolute {
+      @include icon(circle1);
+      left: 0;
+      bottom: -8px;
+    }
+  }
+  .circle2 {
+    position: relative;
+    @include before-absolute {
+      @include icon(circle2);
+      left: 0;
+      bottom: -8px;
+    }
+  }
+  .circle3 {
+    position: relative;
+    @include before-absolute {
+      @include icon(circle1);
+      left: 0;
+      bottom: -8px;
+    }
+  }
+}
