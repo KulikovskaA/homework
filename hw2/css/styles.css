@@ -24,6 +24,10 @@ body{
     min-height: 40px;
 }
 
+.top-menu ul {
+    font-size: 0;
+}
+
 .menu ul li {
     display: inline-block; /* делаем ссылки блочными */
 }
@@ -37,7 +41,6 @@ body{
 .top-menu {
     background-color: #5e5e5e;
     margin-top: 40px;
-    font-size: 14px;
 }
 
 .top-menu a {
@@ -46,6 +49,7 @@ body{
     border-right: 1px solid transparent;
     border-left: 1px solid transparent;
     padding: 13px 25px;/*выравнивание ссылок*/
+    font-family: Arial, sans-serif;
 }
 
 .top-menu a:hover {
@@ -74,7 +78,7 @@ body{
 .left{
     line-height: 39px;
     border-top: 1px solid #c8c8c8;
-    padding-left: 20px;
+
     font-family: Arial, sans-serif;
     font-size: 14px;
     text-decoration: none;
@@ -83,6 +87,9 @@ body{
 .left a{
     text-decoration: none;
     color: #5d5d5d;
+}
+.list li a {
+    padding: 10px 50px 10px 30px;
 }
 
 .left:hover{

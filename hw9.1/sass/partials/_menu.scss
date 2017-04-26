@@ -1,0 +1,25 @@
+header {
+  .nav {
+    background-color: $sea-wave;
+    .menu {
+      min-height: 30px;
+      ul{
+        @include inline-list;
+        li {
+          margin: 7px 0;
+          border-right: 1px solid $white;
+          &:last-child {
+            border-right: none;
+          }
+          a {
+            font-family: $bebas-r;
+            font-size: $fs-title;
+            color: $white;
+            text-decoration: none;
+            padding: 5px 17px;
+          }
+        }
+      }
+    }
+  }
+}
