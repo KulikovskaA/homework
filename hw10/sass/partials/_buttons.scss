@@ -1,0 +1,53 @@
+.buttons {
+  margin-top: 20px;
+  .i-am, .looking {
+    margin-top: 7px;
+    font-size: $fs-title;
+    color: $gray-input;
+  }
+  .looking {
+    position: relative;
+    &:before {
+      background: url("../images/icons/search.png") no-repeat;
+      content: "";
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 0;
+      left:-20px;
+    }
+  }
+
+  .button-r, .button-l {
+    margin-left: -35px;
+    .button {
+      height: 40px;
+      width: 100px;
+      background: url("../images/button.png") no-repeat;
+      .button-input {
+        display: none;
+      }
+      .button-label-f {
+        float: left;
+        width: 50%;
+        height: 40px;
+        cursor: pointer;
+      }
+      .button-label-m {
+        float: left;
+        width: 50%;
+        height: 40px;
+        cursor: pointer;
+      }
+      .button-input:checked + .button-label-f {
+        background: url("../images/button-left.png") no-repeat;
+      }
+      .button-input:checked + .button-label-m {
+        background: url("../images/button-right.png") no-repeat;
+      }
+    }
+  }
+  .button-l{
+    margin-left: -5px;
+  }
+}

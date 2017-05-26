@@ -1,0 +1,96 @@
+@media (max-width: 991px) {
+  .slide-registraition {
+    .orange-back {
+      .slide-reg {
+        min-height: 300px;
+        .slid {
+          max-height: 300px;
+        }
+        .right-side {
+          max-height: 300px;
+          padding: 0 15px 15px 10px;
+          .gradient-text {
+            margin-top: -20px;
+          }
+          .buttons {
+            margin-top: 0;
+            .button-l {
+              margin-left: -18px;
+            }
+            .looking {
+              font-size: $fs-base;
+              margin-left: -10px;
+            }
+            .button-r {
+              margin-left: -40px;
+            }
+            .in {
+              margin-left: -18px;
+            }
+          }
+          .input {
+            margin-top: 0;
+            .in-name {
+              @include after-absolute {
+                left: 302px;
+                display: block;
+                position: absolute;
+                content: url(../images/icons/cross.png);
+                top: -20px;
+              }
+            }
+            .in {
+              margin-left: -18px;
+            }
+          }
+          .selects {
+            margin-top: 4px;
+            .day {
+              #day+.selecter-selected {
+                margin-left: -18px;
+              }
+            }
+            .month {
+              #month+.selecter-selected {
+                margin-left: -44px;
+              }
+            }
+            .year {
+              #year + .selecter-selected {
+                margin-left: -45px;
+              }
+            }
+          }
+          .select-place {
+            margin-top: 39px;
+            .city {
+              #city+.selecter-selected {
+                margin-left: -18px;
+                width: 300px;
+              }
+            }
+          }
+          .checkbox {
+            margin-top: 3px;
+          }
+        }
+        .green-button {
+          margin-top: 0;
+          .start {
+            width: 165px;
+            height: 40px;
+            margin-left: 15px;
+            a {
+              margin-top: 10px;
+              font-size: $fs-title;
+            }
+          }
+          .no-cssgradients .start {
+            background: url("../images/gb_bg.png") repeat-x;
+            background-position: center;
+          }
+        }
+      }
+    }
+  }
+}
